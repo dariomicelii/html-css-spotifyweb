@@ -5,6 +5,9 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;;
+    font-style: normal;
   }
 
   /* # UTILS */
@@ -19,11 +22,24 @@
 }
 
 
+
 .navigation{
     display: flex;
     flex-direction: column;
     align-items: center;
 }
+
+
+.navigation span{
+    display: none;
+    color: white;
+    font-size: 10px;
+}
+
+.navigation .grey{
+    color: grey;
+}
+
 
 .sidebar{
     display: flex;
@@ -66,11 +82,11 @@
 }
 
 .playlist span{
-    color: white;
+    color: grey;
 }
 
 .playlist ul li{
-    color: white;
+    color: grey;
     padding: 5px 0;
     font-size: 10px;
 }
@@ -90,14 +106,21 @@
 }
 
 
+
 .download span{
     display: none;
+    color: grey;
 }
 
 
 .linea{
     display: none;
     color: white;
+}
+
+.myprofile img{
+    background-color: grey;
+    border-radius: 50%;
 }
 
 .myprofile span{
@@ -152,6 +175,12 @@
         align-items: flex-start;
     }
 
+    .navigation span{
+        display: inline-block;
+        color: white;
+        font-size: 10px;
+    }
+
     .playlist{
         display: block;
     }
@@ -167,6 +196,7 @@
     .linea{
         display: block;
         color: white;
+        margin: 5px;
     }
     
 
@@ -180,4 +210,6 @@
         align-items: flex-start;
     }
 }
+
+
 
