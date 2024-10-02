@@ -152,6 +152,64 @@
     width: 100%;
 }
 
+.footer .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 120px;
+}
+
+.footer .container div{
+    width: calc(100% / 3);
+}
+
+.song{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.controls{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.controls .icons{
+    text-align: center;
+}
+
+.volume{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.progressionbar{
+    display: flex;
+    min-width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.progressionline{
+    height: 3px;
+    background-color: grey;
+    flex-grow: 1;
+}
+
+.progression{
+    height: 3px;
+    background-color: white;
+}
+
+.progression-time,
+.final-time{
+    padding: 5px;
+}
+
+
 /* MEDIA QUERY */
 
 @media screen and (min-width: 576px) {
@@ -210,6 +268,4 @@
         align-items: flex-start;
     }
 }
-
-
 
