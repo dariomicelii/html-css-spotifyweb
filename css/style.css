@@ -81,6 +81,11 @@
     color: white;
 }
 
+
+.playlist{
+    height: 100px;
+}
+
 .playlist span{
     color: grey;
 }
@@ -93,6 +98,7 @@
 
 .playlist ul{
     margin-top: 5px;
+    min-width: 100px;
 }
 
 .profile{
@@ -183,11 +189,19 @@
     color: grey;
     width: 30px;
     text-align: center;
-}ù
+}
 
 .save{
     display: flex;
     flex-direction: column;
+}
+
+.fa-heart:hover{
+    color: lime;
+}
+
+.fa-folder:hover{
+    color: lime;
 }
 
 .song-meta .artist{
@@ -207,6 +221,11 @@
     align-items: center;
 }
 
+.progression-time,
+.final-time{
+    font-size: 15px;
+}
+
 .controls .icons{
     display: flex;
     justify-content: center;
@@ -218,10 +237,43 @@
     padding: 0px 5px;
 }
 
+.fa-shuffle:hover{
+    color:lime
+}
+
+.fa-backward-step:hover{
+    color:lime
+}
+
+.fa-circle-play:hover{
+    color:lime
+}
+
+.fa-forward-step:hover{
+    color:lime
+}
+
+.fa-rotate-right:hover{
+    color:lime
+}
+
+
 .volume{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.fa-list:hover{
+    color:lime
+}
+
+.fa-display:hover{
+    color:lime
+}
+
+.fa-volume-high:hover{
+    color:lime
 }
 
 .progressionbar{
@@ -232,16 +284,28 @@
     color: white;
 }
 
+
 .progressionline{
     height: 3px;
     background-color: grey;
     flex-grow: 1;
+    border-radius: 3px;
+}
+
+.volume-line:hover .volume-progression{
+    background-color: lime;
 }
 
 .progression{
     height: 3px;
     background-color: white;
+    border-radius: 3px;
 }
+
+.progressionbar:hover .progression{
+    background-color: lime;
+}
+
 
 .progression-time,
 .final-time{
@@ -263,11 +327,13 @@
 .volume-line{
     height: 3px;
     background-color: grey;
+    border-radius: 3px;
 }
 
 .volume-progression{
     height: 3px;
     background-color: white;
+    border-radius: 3px;
 }
 
 
@@ -332,6 +398,16 @@
 
     .save{
         flex-direction: row;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .controls .icons{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        font-size: 25px;
     }
 }
 
