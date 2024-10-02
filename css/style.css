@@ -165,8 +165,39 @@
 
 .song{
     display: flex;
-    justify-content: center;
     align-items: center;
+    padding: 5px;
+}
+
+.song img{
+    width: 30px;
+}
+
+.song-meta{
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+}
+
+.song i{
+    color: grey;
+    width: 30px;
+    text-align: center;
+}ù
+
+.save{
+    display: flex;
+    flex-direction: column;
+}
+
+.song-meta .artist{
+    font-size: 15px;
+    color: white;
+}
+
+.song-meta .song-name{
+    font-size: 10px;
+    color: grey;
 }
 
 .controls{
@@ -177,7 +208,14 @@
 }
 
 .controls .icons{
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.icons i{
+    padding: 0px 5px;
 }
 
 .volume{
@@ -191,6 +229,7 @@
     min-width: 100%;
     justify-content: space-between;
     align-items: center;
+    color: white;
 }
 
 .progressionline{
@@ -208,6 +247,29 @@
 .final-time{
     padding: 5px;
 }
+
+.volume{
+    display: flex;
+    justify-content: flex-end;
+    margin: 0px 10px;
+}
+
+.volume i{
+    padding: 5px;
+    color: white;
+    font-size: 15px;
+}
+
+.volume-line{
+    height: 3px;
+    background-color: grey;
+}
+
+.volume-progression{
+    height: 3px;
+    background-color: white;
+}
+
 
 
 /* MEDIA QUERY */
@@ -266,6 +328,10 @@
         display: flex;
         flex-direction: column;
         align-items: flex-start;
+    }
+
+    .save{
+        flex-direction: row;
     }
 }
 
