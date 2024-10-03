@@ -108,6 +108,10 @@
     cursor: pointer;
 }
 
+#sidebar .playlist-add:hover .playlist-add-button{
+    background-color: white;
+}
+
 
 #sidebar .playlist-add .playlist-add-button{
     width: 50px;
