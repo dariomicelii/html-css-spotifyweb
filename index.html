@@ -12,51 +12,69 @@
 </head>
 <body>
     <div class="container">
-        <div class="sidebar">
-            <div class="navigation">
-                <img src="./img/logo-small.svg" alt="" class="logo-small">
-                <img src="./img/logo.svg" alt="" class="logo">
-                <div>
-                    <img src="./img/home.svg" alt="">
-                    <span>home</span>
-                </div>
-                <div>
-                    <img src="./img/search.svg" alt="">
-                    <span class="grey">Cerca</span>
-                </div>
-                <div>
-                    <img src="./img/libreria.svg" alt="">
-                    <span class="grey">Libreria</span>
-                </div>
 
-                <div class="playlist">
-                    <p class="pl-title">PLAYLIST</p>
-                    <i class="fa-solid fa-square-plus add"></i>
-                    <span>Crea Playlist</span>
-                    <ul>
-                        <li>Nome Playlist</li>
-                        <li>Nome Playlist</li>
-                        <li>Nome Playlist</li>
-                        <li>Nome Playlist</li>
-                    </ul>
-            </div>
+        <div id="sidebar">
+           <div class="logo">
+            <img src="./img/logo-small.svg" class="d-sm-none">
+            <img src="./img/logo.svg" class="d-none d-sm-block">
+           </div>
+           <div class="links">
+                <ul>
+                    <li class="active">
+                        <a href="#">
+                            <img class="d-inline-block sb-icon" src="./img/home.svg" alt="home">
+                            <span class="d-none d-sm-inline">home</span>
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="#">
+                            <img class="d-inline-block sb-icon" src="./img/search.svg" alt="home">
+                            <span class="d-none d-sm-inline">Cerca</span>
+                        </a>
+                    </li>
 
-        </div>
-
-
-            <div class="profile">
-                <div class="download">
+                    <li>
+                        <a href="#">
+                            <img class="d-inline-block sb-icon" src="./img/libreria.svg" alt="home">
+                            <span class="d-none d-sm-inline">La tua ibreria</span>
+                        </a>
+                    </li>
+                </ul>
+           </div>
+           <div class="playlist-add d-none d-sm-block">
+                <button class="playlist-add-button">
+                    <i class="fa-solid fa-plus"></i>
+                </button>
+                Crea Playlist
+           </div>
+           <div class="playlist-list d-none d-sm-block">
+            <ul>
+                <li>Nome Playlist</li>
+                <li>Nome Playlist</li>
+                <li>Nome Playlist</li>
+                <li>Nome Playlist</li>
+                <li>Nome Playlist</li>
+                <li>Nome Playlist</li>
+                <li>Nome Playlist</li>
+                <li>Nome Playlist</li>
+            </ul>
+           </div>
+           <div class="user">
+                <div class="user-download">
                     <img src="./img/download.svg" alt="">
-                    <span>Installa App</span>
+                    <span class="download-text d-none d-sm-inline">Installa app</span>
                 </div>
-                <hr class="linea">
-                <div class="myprofile">
-                    <img src="./img/profile.svg" alt="">
-                    <span>John Doe</span>
+                <div class="user-profile">
+                    <div class="profile-pic-container">
+                        <img src="./img/profile.svg" alt="">
+                    </div>
+                    <span class="profile-text d-none d-sm-inline">John Doe</span>
                 </div>
-            </div>
-
+           </div>
         </div>
+
+
         <div class="main-section">
             <div class="cta"></div>
             <div class="main-content"></div>
