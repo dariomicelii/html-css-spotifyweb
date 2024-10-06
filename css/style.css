@@ -217,8 +217,8 @@
     height: 120px;
 }
 
-.footer .container div{
-    width: calc(100% / 3);
+.footer .container > div{
+    flex-grow: 1;
 }
 
 .song{
