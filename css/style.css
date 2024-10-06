@@ -193,9 +193,25 @@
 }
 
 .cta{
-    background-color: #2e2e2e;
+    background-color: black;
     height: 80px;
     width: 100%;
+}
+
+.cta .container{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.upgrade-button{
+    background-color: black;
+    border: 1px solid white;
+    border-radius: 30px;
+    margin-right: 10px;
+    margin-top: 20px;
+    padding: 5px 20px;
+    color: white;
+    height: 30px;
 }
 
 .main-content{
