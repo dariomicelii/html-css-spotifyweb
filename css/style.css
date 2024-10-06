@@ -200,6 +200,7 @@
 
 .cta .container{
     display: flex;
+    height: 80px;
     justify-content: flex-end;
 }
 
@@ -214,11 +215,136 @@
     height: 30px;
 }
 
+.upgrade-button:hover{
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+
 .main-content{
-    display: flex;
+    /* display: flex; */
     background-color: #1c1c2c;
     flex: 1 1 100%;
+    overflow-y: auto;
 }
+
+
+
+
+
+
+/* MAIN NAV */
+
+.main-nav{
+    display: flex;
+    align-items: center;
+    height: 40px;
+    color: grey;
+}
+
+.main-nav ul li{
+    display: inline;
+    padding: 10px;
+}
+
+.main-nav ul li:hover{
+    color: white;
+    cursor: pointer;
+}
+
+.main-nav .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    width: 100%;
+}
+
+
+
+
+
+
+
+/* ALBUM */
+
+.recent .container{
+    display: flex;
+    height: 300px;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.section-title{
+    color: white;
+}
+
+.section-subtitle{
+    color: gray;
+}
+
+.recent{
+    height: 800px;
+}
+
+.recent .container div{
+    width: calc(100% / 2);
+}
+
+.recent .container img{
+    width: 200px;
+    height: 200px;
+}
+
+.recent .container h4{
+    color: white;
+    text-align: center;
+}
+
+.recent .container h5{
+    color: gray;
+    text-align: center;
+}
+
+.creato-per .container{
+    display: flex;
+    height: 300px;
+}
+
+.creato-per .container img{
+    width: 200px;
+    height: 200px; 
+}
+
+
+.creato-per .container div{
+    width: calc(100% / 2);
+}
+
+.popolari .container{
+    display: flex;
+    height: 300px;
+}
+
+.popolari .container img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+.popolari .container div{
+    width: calc(100% / 2);
+}
+
+
+
+
+
+
+
+
+
+/* FOOTER */
 
 .footer{
     background-color: #2e2e2e;
@@ -456,6 +582,80 @@
         padding-bottom: .5rem;
     }
 
+    /* ALBUM */
+
+    .recent{
+        height: 300px;
+    }
+
+ .recent .container{
+    display: flex;
+    height: 300px;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+ }
+
+ .section-title{
+    color: white;
+ }
+
+ .recent .container div{
+    width: calc(100% / 6);
+ }
+
+ .recent .container img{
+    width: 150px;
+    height: 150px;
+    padding: 5px;
+ }  
+
+ .recent .container h4{
+    color: white;
+    text-align: center;
+ }
+
+ .recent .container h5{
+    color: gray;
+    text-align: center;
+ }
+
+ .creato-per{
+    height: 300px;
+ }
+
+ .creato-per .container{
+    display: flex;
+    height: 300px;
+ }
+
+ .creato-per .container img{
+    width: 150px;
+    height: 150px;
+    padding: 5px; 
+ }
+
+
+ .creato-per .container div{
+    width: calc(100% / 6);
+ }
+
+ .popolari .container{
+    display: flex;
+    height: 300px;
+ }
+
+ .popolari .container img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    padding: 5px;
+ }
+
+ .popolari .container div{
+    width: calc(100% / 6);
+ }
+
+
     
 }
 
@@ -468,4 +668,85 @@
         font-size: 25px;
     }
 }
+
+@media screen and (min-width: 992px){
+        /* ALBUM */
+
+        .recent{
+            height: 300px;
+        }
+    
+     .recent .container{
+        display: flex;
+        height: 300px;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+     }
+    
+     .section-title{
+        color: white;
+     }
+    
+     .recent .container div{
+        width: calc(100% / 6);
+     }
+    
+     .recent .container img{
+        width: 170px;
+        height: 170px;
+        padding: 5px;
+     }  
+    
+     .recent .container h4{
+        color: white;
+        text-align: center;
+     }
+    
+     .recent .container h5{
+        color: gray;
+        text-align: center;
+     }
+    
+     .creato-per{
+        height: 300px;
+     }
+    
+     .creato-per .container{
+        display: flex;
+        height: 300px;
+     }
+    
+     .creato-per .container img{
+        width: 170px;
+        height: 170px;
+        padding: 5px; 
+     }
+    
+    
+     .creato-per .container div{
+        width: calc(100% / 6);
+     }
+    
+     .popolari .container{
+        display: flex;
+        height: 300px;
+     }
+    
+     .popolari .container img{
+        width: 170px;
+        height: 170px;
+        border-radius: 50%;
+        padding: 5px;
+     }
+    
+     .popolari .container div{
+        width: calc(100% / 6);
+     }
+}
+
+@media screen and (min-width: 1200px){
+    
+}
+
+
 
